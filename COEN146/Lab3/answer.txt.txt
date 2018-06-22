@@ -1,0 +1,7 @@
+1.  What does 'socket.connect()' do in the context of UDP?
+
+UDP is connectionless, so sock.connect() only sets a default send/receive address.
+
+2.  Explain 'socket.send()' vs 'socket.sendto()' in context of UDP.
+
+If sock.connect() was not used, then socket.sendto() allows you to define where the packet is going.  socket.send() is usually only used for TCP, but if connect is called, it can be used to send packets.

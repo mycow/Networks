@@ -1,0 +1,7 @@
+hello
+there
+
+this is a test file for coen 146 lab 3
+you can add more stuff here
+
+goodbye

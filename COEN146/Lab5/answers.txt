@@ -1,0 +1,4 @@
+1.  The stream is one complete file and any size chunk it takes in at a time is fine and is easier to transfer in smaller parts, but since the packet has multiple parts, you want to make sure you don't break things up.
+2.  Checksum is a key that is unique to each packet.  In terms of this lab, we knew that two packets were the same by their checksum.  If the checksums were different, we would know something happened during transfer.
+3.  Serialization and deserialization are the processes by which we turn whatever we are transferring into a stream of bytes because in this lab we can't encode the required 'dict'.
+4.  We could include a start and stop clock on the client side and compare it to a constant time and if nothing is received within the time we set, we can have the program send the packet again.
